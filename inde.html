@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVault | Buy & Sell Computers</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { background: #0f172a; color: #f8fafc; line-height: 1.6; }
+    
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; background: #1e293b; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
+    .logo { font-size: 1.5rem; font-weight: 800; color: #38bdf8; text-decoration: none; }
+    nav a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; transition: 0.3s; }
+    nav a:hover { color: #38bdf8; }
+    
+    .hero { text-align: center; padding: 4rem 1rem; background: radial-gradient(circle at center, #1e1b4b 0%, #0f172a 80%); }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; }
+    .hero p { color: #94a3b8; max-width: 600px; margin: 0 auto 2rem; }
+    
+    .btn { background: #38bdf8; color: #0f172a; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; border: none; cursor: pointer; transition: 0.2s; }
+    .btn:hover { background: #7dd3fc; transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: #38bdf8; border: 1px solid #38bdf8; margin-left: 0.5rem; }
+    .btn-outline:hover { background: rgba(56, 189, 248, 0.1); }
+    
+    .products { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+    .products h2 { text-align: center; margin-bottom: 2.5rem; font-size: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; overflow: hidden; transition: 0.3s; }
+    .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+    .card-img { height: 180px; background: #334155; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .card-body { padding: 1.5rem; }
+    .card-title { font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff; }
+    
+    .specs { font-size: 0.85rem; color: #94a3b8; margin-bottom: 1.5rem; list-style: none; }
+    .specs li { margin-bottom: 0.3rem; }
+    
+    .price-bar { display: flex; justify-content: space-between; align-items: center; }
+    .price { font-size: 1.4rem; font-weight: 700; color: #38bdf8; }
+    
+    footer { text-align: center; padding: 2rem; border-top: 1px solid #334155; color: #64748b; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">⚡ TECHVAULT</a>
+    <nav>
+      <a href="#buy">Buy PC</a>
+      <a href="#sell">Sell Your PC</a>
+      <a href="#" class="btn" style="padding: 0.4rem 1rem;">Cart (0)</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Buy & Sell High-Performance PCs</h1>
+    <p>Upgrade to custom-built gaming rigs or sell your used setup for instant cash.</p>
+    <a href="#buy" class="btn">Shop Computers</a>
+    <a href="#sell" class="btn btn-outline">Get Trade-in Quote</a>
+  </section>
+
+  <section class="products" id="buy">
+    <h2>Featured Systems</h2>
+    <div class="grid">
+      
+      <div class="card">
+        <div class="card-img">🖥️</div>
+        <div class="card-body">
+          <h3 class="card-title">Apex Gaming Rig</h3>
+          <ul class="specs">
+            <li>• Intel i7-14700K | RTX 4070 Ti</li>
+            <li>• 32GB DDR5 | 2TB NVMe SSD</li>
+            <li>• Liquid Cooled | 850W PSU</li>
+          </ul>
+          <div class="price-bar">
+            <span class="price">$1,899</span>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">💻</div>
+        <div class="card-body">
+          <h3 class="card-title">ProStudio Laptop</h3>
+          <ul class="specs">
+            <li>• Apple M3 Pro | 18GB RAM</li>
+            <li>• 512GB High-Speed SSD</li>
+            <li>• 16-inch Liquid Retina XDR</li>
+          </ul>
+          <div class="price-bar">
+            <span class="price">$2,299</span>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">⚙️</div>
+        <div class="card-body">
+          <h3 class="card-title">Workstation Beast</h3>
+          <ul class="specs">
+            <li>• AMD Threadripper | RTX 4090</li>
+            <li>• 64GB ECC RAM | 4TB Storage</li>
+            <li>• Designed for 3D & Video Editing</li>
+          </ul>
+          <div class="price-bar">
+            <span class="price">$3,499</span>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TechVault Computers. Fast shipping & instant buyback guaranteed.</p>
+  </footer>
+
+</body>
+</html>
