@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn HTML & CSS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">&lt;/&gt; WebLearn</h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <p class="small-title">WELCOME TO WEB DEVELOPMENT</p>
+
+        <h1>Learn <span>HTML</span> & <span>CSS</span></h1>
+
+        <p>
+            Learn the basics of HTML and CSS and start creating
+            beautiful websites step by step.
+        </p>
+
+        <a href="#html" class="btn">Start Learning</a>
+    </div>
+
+    <div class="code-box">
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <pre><code>&lt;html&gt;
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;My first website&lt;/p&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</section>
+
+<!-- HTML Section -->
+<section id="html" class="section">
+    <p class="section-label">01 — HTML</p>
+    <h2>What is HTML?</h2>
+
+    <p class="description">
+        HTML stands for HyperText Markup Language. It is used
+        to create the structure and content of a webpage.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">&lt;/&gt;</div>
+            <h3>Structure</h3>
+            <p>
+                HTML creates the structure of a webpage using
+                elements and tags.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">H1</div>
+            <h3>Headings</h3>
+            <p>
+                Use heading tags such as h1, h2, and h3
+                to organize content.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">IMG</div>
+            <h3>Images</h3>
+            <p>
+                The img element allows you to add images
+                to your webpage.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="lesson-code">
+        <h3>HTML Example</h3>
+
+        <pre><code>&lt;h1&gt;My Website&lt;/h1&gt;
+
+&lt;p&gt;Welcome to my website!&lt;/p&gt;
+
+&lt;a href="https://example.com"&gt;
+Visit Website
+&lt;/a&gt;</code></pre>
+    </div>
+</section>
+
+<!-- CSS Section -->
+<section id="css" class="section css-section">
+    <p class="section-label">02 — CSS</p>
+    <h2>What is CSS?</h2>
+
+    <p class="description">
+        CSS stands for Cascading Style Sheets. It is used
+        to design and style HTML webpages.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>Colors</h3>
+            <p>
+                CSS lets you change text, background,
+                and border colors.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📦</div>
+            <h3>Layout</h3>
+            <p>
+                Use Flexbox and Grid to create modern
+                webpage layouts.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h3>Design</h3>
+            <p>
+                Add shadows, borders, animations,
+                spacing, and more.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="lesson-code">
+        <h3>CSS Example</h3>
+
+        <pre><code>body {
+background-color: #f4f7fb;
+}
+
+h1 {
+color: #2563eb;
+font-size: 40px;
+}
+
+p {
+color: #555;
+}</code></pre>
+    </div>
+</section>
+
+<!-- Examples -->
+<section id="examples" class="section">
+    <p class="section-label">03 — EXAMPLES</p>
+    <h2>HTML + CSS Together</h2>
+
+    <div class="example-container">
+
+        <div class="example-code">
+            <h3>HTML</h3>
+
+            <pre><code>&lt;div class="box"&gt;
+&lt;h2&gt;Hello!&lt;/h2&gt;
+&lt;p&gt;I am learning CSS.&lt;/p&gt;
+&lt;button&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <div class="example-code">
+            <h3>CSS</h3>
+
+            <pre><code>.box {
+padding: 30px;
+background: white;
+border-radius: 15px;
+text-align: center;
+}
+
+button {
+padding: 10px 20px;
+background: #2563eb;
+color: white;
+border: none;
+}</code></pre>
+        </div>
+
+    </div>
+</section>
+
+<!-- Quiz -->
+<section id="quiz" class="quiz-section">
+    <p class="section-label">04 — QUIZ</p>
+
+    <h2>Test Your Knowledge</h2>
+
+    <div class="quiz-box">
+
+        <h3>1. What does HTML stand for?</h3>
+
+        <label>
+            <input type="radio" name="q1" value="wrong">
+            Hyper Tool Markup Language
+        </label>
+
+        <label>
+            <input type="radio" name="q1" value="correct">
+            HyperText Markup Language
+        </label>
+
+        <label>
+            <input type="radio" name="q1" value="wrong">
+            HighText Machine Language
+        </label>
+
+        <h3>2. What is CSS used for?</h3>
+
+        <label>
+            <input type="radio" name="q2" value="wrong">
+            Creating databases
+        </label>
+
+        <label>
+            <input type="radio" name="q2" value="correct">
+            Styling webpages
+        </label>
+
+        <label>
+            <input type="radio" name="q2" value="wrong">
+            Sending emails
+        </label>
+
+        <button onclick="checkQuiz()" class="btn">
+            Check Answer
+        </button>
+
+        <p id="result"></p>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>&lt;/&gt; WebLearn</h3>
+    <p>Learn HTML • Learn CSS • Build Websites</p>
+    <p>© 2026 WebLearn. All rights reserved.</p>
+</footer>
+
+<script>
+    function checkQuiz() {
+
+        let score = 0;
+
+        let q1 = document.querySelector(
+            'input[name="q1"]:checked'
+        );
+
+        let q2 = document.querySelector(
+            'input[name="q2"]:checked'
+        );
+
+        if (q1 && q1.value === "correct") {
+            score++;
+        }
+
+        if (q2 && q2.value === "correct") {
+            score++;
+        }
+
+        document.getElementById("result").innerText =
+            "Your score: " + score + "/2";
+    }
+</script>
+
+</body>
+</html>
