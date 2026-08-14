@@ -148,10 +148,214 @@
       nav { flex-direction: column; gap: 1rem; }
     }
   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THREAD & STYLE - Online Store</title>
+    <style>
+        /* --- RESET & BASIC STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* --- NAVIGATION --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #111;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff4757;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 20px;
+            font-weight: 600;
+        }
+
+        .btn-cart {
+            background-color: #111;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* --- HERO BANNER --- */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .btn-shop {
+            background-color: #ffffff;
+            color: #111;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-shop:hover {
+            background-color: #ff4757;
+            color: #fff;
+        }
+
+        /* --- PRODUCTS SECTION --- */
+        .container {
+            padding: 60px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-category {
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ff4757;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #ff4757;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #111;
+            color: #aaa;
+            padding: 40px 8% 20px;
+            text-align: center;
+        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navigation -->
+<<<<<<< HEAD
   <header>
     <nav>
       <a href="#" class="logo">MyBrand</a>
@@ -159,10 +363,21 @@
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#contact">Contact</a></li>
+=======
+  <header class="navbar">
+    <div class="logo">Brand<span>Name</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn">Get Started</a></li>
+>>>>>>> b2588b8d8ee1df482f4f49f4a9a07762ca1c09fc
       </ul>
     </nav>
   </header>
 
+<<<<<<< HEAD
   <!-- Main Hero Section -->
   <main>
     <section class="hero">
@@ -184,14 +399,285 @@
       <div class="card">
         <h3>🎨 Easy to Customize</h3>
         <p>Change colors, fonts, and layouts using CSS custom properties (variables).</p>
+=======
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Build Modern Websites Faster</h1>
+      <p>Create clean, responsive, and beautiful layouts with clean HTML and modern CSS flexbox.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn primary-btn">Learn More</a>
+        <a href="#contact" class="btn secondary-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Choose Us</h2>
+    <p class="subtitle">Built with performance and responsiveness in mind.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Fast Performance</h3>
+        <p>Optimized structure ensuring rapid load times across all devices.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Fully Responsive</h3>
+        <p>Looks great on desktops, tablets, and mobile screens seamlessly.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Modern Design</h3>
+        <p>Clean layout guidelines with flexible and customizable typography.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 BrandName. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide for simple mobile view */
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">THREAD & CO.</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" class="btn-cart">Cart (0)</a>
+        </div>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <h1>NEW SUMMER COLLECTION</h1>
+        <p>Discover the latest trends with up to 40% off</p>
+        <a href="#products" class="btn-shop">Shop Now</a>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <main class="container" id="products">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="product-grid">
+
+            <!-- Product Item 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80" alt="White T-Shirt" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Men</div>
+                    <div class="product-title">Classic Cotton Tee</div>
+                    <div class="product-price">$29.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80" alt="Black Hoodie" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Unisex</div>
+                    <div class="product-title">Minimalist Black Hoodie</div>
+                    <div class="product-price">$59.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Item 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" alt="Denim Jacket" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Women</div>
+                    <div class="product-title">Vintage Denim Jacket</div>
+                    <div class="product-price">$89.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Item 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=80" alt="Casual Dress" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">Women</div>
+                    <div class="product-title">Summer Casual Dress</div>
+                    <div class="product-price">$49.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping & Returns</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 THREAD & CO. All rights reserved.
+        </div>
+    </footer>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Landing Page</title>
+  <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">BrandName</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Build something incredible today</h1>
+      <p>A simple, clean, and responsive landing page template crafted with modern CSS standards.</p>
+      <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="features" id="features">
+      <div class="card">
+        <h3>Fast Performance</h3>
+        <p>Built with zero dependencies using native CSS, ensuring near-instant load speeds.</p>
+      </div>
+      <div class="card">
+        <h3>Fully Responsive</h3>
+        <p>Adapts fluidly across mobile, tablet, and desktop screens using CSS Grid.</p>
+      </div>
+      <div class="card">
+        <h3>Easy Customization</h3>
+        <p>Uses CSS variables so you can easily update colors, typography, and spacing.</p>
+>>>>>>> b2588b8d8ee1df482f4f49f4a9a07762ca1c09fc
       </div>
     </section>
   </main>
 
+<<<<<<< HEAD
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 MyBrand. All rights reserved.</p>
   </footer>
 
 </body>
+=======
+  <footer>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Brand<span>Name</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="btn">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Build Modern Websites Faster</h1>
+      <p>Create clean, responsive, and beautiful layouts with clean HTML and modern CSS flexbox.</p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn primary-btn">Learn More</a>
+        <a href="#contact" class="btn secondary-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Choose Us</h2>
+    <p class="subtitle">Built with performance and responsiveness in mind.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Fast Performance</h3>
+        <p>Optimized structure ensuring rapid load times across all devices.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Fully Responsive</h3>
+        <p>Looks great on desktops, tablets, and mobile screens seamlessly.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Modern Design</h3>
+        <p>Clean layout guidelines with flexible and customizable typography.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 BrandName. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+</body>
+>>>>>>> b2588b8d8ee1df482f4f49f4a9a07762ca1c09fc
 </html>
